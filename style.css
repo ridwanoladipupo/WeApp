@@ -1,0 +1,116 @@
+html{
+    background-image: url("backg.jpg");
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    /* background-color: transparent; */
+}
+
+
+body{
+    background-color: transparent;
+}
+
+
+.logo{
+     width: 100px;
+     height: 50px;
+}
+
+.search-bar{
+    
+    padding-right: 10%;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+
+a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.main-card{
+ /* opacity: 80%; */
+ border-radius: 60px;
+}
+
+select{
+    border-radius: 10px;
+    width: 80%;
+}
+
+.btn1{
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+
+/*  */
+  .top{
+    background-color: transparent;
+  }
+  .card{
+    border: none;
+    background-color: rgb(235, 235, 235);
+    opacity: 80%;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+  }
+  .today-date{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .day-temp{
+    font-size: 30px;
+    white-space: normal;
+    line-height: 23px;
+    text-align: right;
+  }
+  #remark{
+    margin-bottom: 0;
+  }
+  #today-sun{
+    transform: scale(0.63);
+    min-width: 40%;
+    margin-top: -30px;
+    margin-left: -40px;
+    margin-top: -60px;
+  }
+  .hello{
+    display: flex;
+    align-items: flex-start;
+    max-width: 180px;
+  }
+  #line{
+    border-bottom: #F5BF6B 1px solid;
+  }
+  #uv-index{
+    color: #FFBF00;
+  }
+
+
+  section p{
+      margin-left: auto;
+    font-weight: 600;
+  }
+
+
+
+
+
+  .ex-button{
+    background: none
+    ;
+    border: none;
+  }
+
+  .modal-content{
+    background-color: white;
+  }
+
+  .ex-block{
+    display: block;
+  }
