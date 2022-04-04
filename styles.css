@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-html {
+body {
   background: url('neda-astani-KWTkd7mHqKE-unsplash.jpg') center center / cover no-repeat fixed;
 }
 
@@ -205,6 +205,10 @@ section p {
 /* .navbar-toggler-icon i{
   align-self: center;
 } */
+
+.weather.loading {
+  visibility: hidden;
+}
 
 @media only screen and (max-width: 991px) {
   .today {
