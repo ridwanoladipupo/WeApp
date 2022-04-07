@@ -9,6 +9,8 @@ html{
 
 body{
     background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -18,10 +20,10 @@ body{
 }
 
 .search-bar{
-    
-    padding-right: 10%;
-    border-radius: 5px;
+padding: 2px 8px;    
+/* border-radius: 5px; */
     border: 1px black solid;
+opacity: 70%;    /* position: absolute; */
 }
 
 
@@ -79,6 +81,35 @@ select{
     margin-left: -40px;
     margin-top: -60px;
   }
+
+  .search-bar-icon{
+    background: none ;
+    border: none;
+    position: relative;
+    right: 40px;
+  }
+
+  #today-sun1{
+    transform: scale(0.63);
+    min-width: 40%;
+    margin-top: -30px;
+    margin-left: -40px;
+    margin-top: -60px;
+  }
+  #today-sun2{
+    transform: scale(0.3);
+    min-width: 40%;
+    margin-top: -30px;
+    margin-left: -80px;
+    margin-top: -60px;
+  }
+  #today-sun3{
+    transform: scale(0.3);
+    min-width: 40%;
+    margin-top: -30px;
+    margin-left: -80px;
+    margin-top: -60px;
+  }
   .hello{
     display: flex;
     align-items: flex-start;
@@ -114,3 +145,20 @@ select{
   .ex-block{
     display: block;
   }
+
+  .increase-modal{
+    width: 700px;
+  }
+
+  .first-location{
+    font-size: 13px;
+  }
+
+.lowers
+{
+  font-size: 13px;
+}
+.lowersXtra{
+  font-size: 12px;
+  font-weight: bold;
+}
