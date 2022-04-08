@@ -90,24 +90,53 @@ let countries = {
         
         for (let i = 0; i <= 120; i++) {
             if (i < 30) {
-                document.getElementById("app").innerHTML += `<button  class="mb-2 ex-button ex-block "     id="valz" value= "${datas[i].EnglishName}">  ${datas[i].EnglishName}, ${datas[i].Country.ID} </button>`
+                document.getElementById("app").innerHTML += `<button  class="mb-2 ex-button ex-block "  onclick="getResult()" id="valz" value= "${datas[i].EnglishName}">  ${datas[i].EnglishName}, ${datas[i].Country.ID} </button>`
             } else if (i > 29 && i < 60) {
-                document.getElementById("app2").innerHTML += `<button  class="mb-2  ex-button ex-block "   id="valz" value= "${datas[i].EnglishName}">${datas[i].EnglishName}, ${datas[i].Country.ID}</button>`
+                document.getElementById("app2").innerHTML += `<button class="mb-2  ex-button ex-block " onclick="getResult()"  id="valz" value= "${datas[i].EnglishName}">${datas[i].EnglishName}, ${datas[i].Country.ID}</button>`
             }
             else if (i > 59 && i < 90) {
-                document.getElementById("app3").innerHTML += `<button  class="mb-2 ex-button ex-block  "   id="valz" value= "${datas[i].EnglishName}" >${datas[i].EnglishName}, ${datas[i].Country.ID}</button>`
+                document.getElementById("app3").innerHTML += `<button class="mb-2 ex-button ex-block  " onclick="getResult()"  id="valz" value= "${datas[i].EnglishName}" >${datas[i].EnglishName}, ${datas[i].Country.ID}</button>`
             }
             else if (i > 89 && i < 120) {
-                document.getElementById("app4").innerHTML += `<button  class="mb-2 ex-button ex-block "   id="valz" value= "${datas[i].EnglishName}" >${datas[i].EnglishName}, ${datas[i].Country.ID}</button>`
+                document.getElementById("app4").innerHTML += `<button class="mb-2 ex-button ex-block "  onclick="getResult()" id="valz" value= "${datas[i].EnglishName}" >${datas[i].EnglishName}, ${datas[i].Country.ID}</button>`
             }
         }
     },
 };
-$(document).on("click", "#valz", function() {
-    getResult();
-    $('#lstodal').modal('show')
-  });
+// $(document).on("click", "#valz", function() {
+//     getResult();
+//     // $('#searchModal').modal('show')
+//   });
 
+
+
+    function getResult(){
+ 
+        $('#app button').click(function (e) {
+        
+        displayResult($(this).attr('value'))
+        $('#lstodal').modal('show')
+        
+    });
+    
+    $('#app2 button').click(function(e) {
+        
+        displayResult($(this).attr('value'))
+        $('#lstodal').modal('show')
+    });
+    $('#app3 button').click(function(e) {
+        
+        displayResult($(this).attr('value'))
+        $('#lstodal').modal('show')
+    });
+    $('#app4 button').click(function(e) {
+        
+        displayResult($(this).attr('value'))
+        $('#lstodal').modal('show')
+    });
+        
+        
+}
 
 setInterval(countries.fetchCountry(), 10);
 
@@ -213,40 +242,6 @@ function displayResult(ixy) {
             getEachWeather(ixy)
 } 
 
-
-function getResult() {
-    
-
-    $('#app button').click(function(e) {
-        console.log(this);
-    
-        // Returns the click event object of the button clicked.
-        console.log(e);
-        displayResult($(this).attr('value'))
-    });
-    
-    $('#app2 button').click(function(e) {
-        console.log(this);
-    
-        console.log(e);
-        displayResult($(this).attr('value'))
-    });
-    $('#app3 button').click(function(e) {
-        console.log(this);
-    
-        console.log(e);
-        displayResult($(this).attr('value'))
-    });
-    $('#app4 button').click(function(e) {
-        console.log(this);
-    
-        console.log(e);
-        displayResult($(this).attr('value'))
-    });
-        
-        
-       
-    }
 
 
        
